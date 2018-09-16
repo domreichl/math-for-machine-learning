@@ -4,8 +4,8 @@ math_for_machine_learning.py
 collects mathematical concepts that are essential for machine learning
 '''
 
-from elementary_algebra import linear_function # to plot degree 1 polynomial
-from elementary_algebra import quadratic_function # to plot degree 2 polynomial
+from elementary_algebra import linear_function # for plotting degree 1 polynomial
+from elementary_algebra import quadratic_function # for plotting degree 2 polynomial
 
 linear_function(3, 9, (-5, 6), 1, annoInter=False)
 ''' plot y = 3x + 9
