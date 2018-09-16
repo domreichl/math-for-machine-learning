@@ -17,4 +17,4 @@ linear_function(3, 9, (-5, 6), 1, annoInter=False)
 quadratic_function(2, 8, -16, (-20, 21), xInter=True, yInter=False, vertex=True, symLine=False)
 ''' plot y = 2x**2 + 8x - 16
     data range for x: -20 to 20
-    plot x intercepts and vertex, but not y intercept nor line of symmetry '''
+    plot roots (xInter) and vertex, but not y intercept nor line of symmetry '''
