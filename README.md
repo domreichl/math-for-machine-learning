@@ -5,4 +5,4 @@ This repository collects mathematical concepts that are essential for machine le
 - The module **elementary_algebra** provides functions for plotting degree 1 and 2 polynomials (linear and quadratic functions).
 - The modules **linear_algebra**, **differential_calculus**, **integral_calculus**, **statistics_fundamentals**, and **probability** are not written yet.
 
-Requires third-party modules **pandas** and **matplotlib**.
+Required third-party modules are **pandas** and **matplotlib**.
