@@ -82,5 +82,5 @@ def quadratic_function(a, b, c, r=(-10, 11), xInter=True, yInter=True, vertex=Tr
     if vertex == True: plt.scatter(vx, vy, color='magenta') # plot vertex
     if symLine == True: plt.plot(sx, sy, color='magenta') # plot symmetry line
 
-    plt.show()
+    plt.show() # display plot
     return
