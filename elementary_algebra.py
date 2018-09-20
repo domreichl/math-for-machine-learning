@@ -1,6 +1,5 @@
 '''
-elementary_algebra.py
-    by Dominic Reichl, @domreichl
+elementary_algebra.py by Dominic Reichl, @domreichl
 module for math_for_machine_learning.py that plots polynomials
 '''
 
