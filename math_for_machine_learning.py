@@ -1,6 +1,5 @@
 '''
-math_for_machine_learning.py
-by Dominic Reichl, @domreichl
+math_for_machine_learning.py by Dominic Reichl, @domreichl
 collects mathematical concepts that are essential for machine learning
 '''
 
