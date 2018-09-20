@@ -1,6 +1,10 @@
 '''
 elementary_algebra.py by Dominic Reichl, @domreichl
 module for math_for_machine_learning.py that plots polynomials
+
+key concepts:
+- function: linear, quadratic
+- slope, intercept, root, vertex, symmetry
 '''
 
 # degree 1 polynomial: y = mx + c
