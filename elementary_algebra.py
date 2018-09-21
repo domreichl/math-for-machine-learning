@@ -1,6 +1,6 @@
 '''
-elementary_algebra.py by Dominic Reichl, @domreichl
-module for math_for_machine_learning.py that plots polynomials
+linear_algebra.py by Dominic Reichl, @domreichl
+module for math_for_machine_learning.py that XXXXXXXXXXXX
 
 key concepts:
 - function: linear, quadratic
@@ -19,12 +19,14 @@ def linear_function(m, c, r=(-10, 11), s=0, annoInter=True):
         annoInter: annotate x and y intercepts; default is True
     '''
 
+    print('-'*30 + '\nLinear Function\n' + '-'*30)
+
     import pandas as pd # for data frames
     from matplotlib import pyplot as plt # for graphs
 
     df = pd.DataFrame({'x': range(r[0], r[1])}) # create data frame with x column
     df['y'] = m*df['x'] + c # add y column by applying linear equation
-    print('Linear function\ny = %dx + %d\n' %(m,c), df) # display data frame
+    print('y = %dx + %d\n' %(m,c), df) # display data frame
 
     plt.plot(df.x, df.y, color='grey', marker = 'o') # create plot
     plt.xlabel('x'); plt.ylabel('y') # label axes
@@ -54,13 +56,15 @@ def quadratic_function(a, b, c, r=(-10, 11), xInter=True, yInter=True, vertex=Tr
         symLine: plot line of symmetry; default is True
     '''
 
+    print('-'*30 + '\nQuadratic Function\n' + '-'*30)
+
     import pandas as pd # for data frames
     from matplotlib import pyplot as plt # for graphs
     from math import sqrt # for calculating polynomial roots
     
     df = pd.DataFrame ({'x': range(r[0], r[1])}) # create data frame with x column
     df['y'] = a*df['x']**2 + b*df['x'] + c # add y column by applying quadratic equation
-    print('Quadratic function\ny = %dx² + %dx + %d\n' %(a,b,c), df) # display data frame
+    print('y = %dx² + %dx + %d\n' %(a,b,c), df) # display data frame
 
     plt.plot(df.x, df.y, color='grey') # create plot
     plt.xlabel('x'); plt.ylabel('y') # label axes
