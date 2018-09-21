@@ -31,3 +31,7 @@ print(vector_multiplication([2,3,1], [1,2,-2])) # multiply two 3x1 vectors
 print(matrix_operations([[1,2,3],[4,5,6]], [[6,5,4],[3,2,1]], 'div')) # inversely multiply two 3x3 matrices
 solve_system_of_equations([[4,2],[5,2]], [[14],[16]]) # 2x+4y=18; 6x+2y=34; find x and y
 eigenvalues_eigenvectors([[2,0],[0,3]]) # get eigenvalues and eigenvectors of a 2x2 matrix
+
+
+from integral_calculus import integral
+integral() # no arguments because f(x) = 3x²+2x+1 and integral limits (0,3) are hardcoded in module
