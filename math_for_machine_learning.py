@@ -30,6 +30,19 @@ print(matrix_operations([[1,2,3],[4,5,6]], [[6,5,4],[3,2,1]], 'div')) # inversel
 solve_system_of_equations([[4,2],[5,2]], [[14],[16]]) # 2x+4y=18; 6x+2y=34; find x and y
 eigenvalues_eigenvectors([[2,0],[0,3]]) # get eigenvalues and eigenvectors of a 2x2 matrix
 
+from differential_calculus import average_rate_of_change
+from differential_calculus import limits
+from differential_calculus import discontinuity
+from differential_calculus import differentiation
+from differential_calculus import critical_points
+from differential_calculus import partial_derivatives
+
+average_rate_of_change() # introduces the concepts 'secant line' and 'slope'
+limits() # introduces the concept of limits
+discontinuity() # introduces the concept of a function being non-continuous at a given point
+differentiation() # introduces the concept of derivatives
+critical_points() # introduces the concept of critical points (min, max, flex)
+partial_derivatives() # introduces the concept of partial derivatives for multivariate functions
 
 from integral_calculus import integral # for calculating an integral and plotting its area
 
