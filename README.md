@@ -16,4 +16,4 @@ This Python repository collects mathematical concepts that are essential for mac
 
 Required third-party modules are *pandas* for data frames, *matplotlib* for graphs, *numpy* for vectors and matrices, and *scipy* for integrals.
 
-If the scripts in this repository appear messy to you, note that I have written them solely for myself to refresh and refine my understanding of these concepts. I did not bother to present them in a more consistent structure because there are already ample resources for learning algebra and calculus available online.
+If the scripts in this repository appear messy to you, please consider that I have written them solely for myself to refresh and refine my understanding of these concepts. I did not bother to present them in a more consistent structure because there are already ample resources for learning algebra and calculus available online.
