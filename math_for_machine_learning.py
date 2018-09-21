@@ -31,6 +31,6 @@ solve_system_of_equations([[4,2],[5,2]], [[14],[16]]) # 2x+4y=18; 6x+2y=34; find
 eigenvalues_eigenvectors([[2,0],[0,3]]) # get eigenvalues and eigenvectors of a 2x2 matrix
 
 
-from integral_calculus import integral
+from integral_calculus import integral # for calculating an integral and plotting its area
 
 integral() # no arguments because f(x) = 3x²+2x+1 and integral limits (0,3) are hardcoded in module
