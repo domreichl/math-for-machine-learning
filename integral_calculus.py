@@ -4,9 +4,12 @@ module for math_for_machine_learning.py that calculates an integral and plots it
 '''
 
 def integral():
-    print('Integral Calculus\n' + '-'*30)
-    print('The integral of a function is the area under it. This is the inverse of the function\'s derivative.\nWhy is it relevant for machine learning? Because a probability of some occurance might have to be computed between two limits.\nLet\'s look at an example:')
-
+    print('-'*30 + '\nIntegral Calculus\n' + '-'*30)
+    print('\nThe integral of a function is the area under it. This is the inverse of the function\'s derivative.')
+    print('\nWhy is it relevant for machine learning?')
+    print('Because a probability of some occurance might have to be computed between two limits.')
+    print('\nLet\'s look at an example:')
+    
     import numpy as np
     from matplotlib import pyplot as plt
     from scipy import integrate
