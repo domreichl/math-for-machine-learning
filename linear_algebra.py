@@ -24,18 +24,14 @@ def vector_properties(x, y):
         Plots the vector and returns its magnitude and direction.
     '''
 
+    print('-'*30 + '\nVector Properties\n' + '-'*30)
+
     import numpy as np # for building an array
     import matplotlib.pyplot as plt # for plotting the vector
     from math import sqrt, atan, degrees, log # for calculating vector properties
 
     v = np.array([x, y]) # define vector as a 2d array
     print('Vector:', v)
-
-    # plot vector as arrow in a coordinate system (quiver plot)
-    plt.grid()
-    plt.quiver([0],[0], *v, angles='xy', scale_units='xy', scale=1, color='green')
-    plt.xlim(-10, 10); plt.ylim(-10, 10)
-    plt.show()
 
     # calculate vector magnitude
     vMag = sqrt(x**2 + y**2) # raw equation
@@ -50,6 +46,12 @@ def vector_properties(x, y):
     vAtanAlt = np.degrees(np.arctan2(y, x)) # numpy equation (saves 2 lines of code)
     vAtan == vAtanAlt # True
     print('Direction:', vAtan)
+
+    # plot vector as arrow in a coordinate system (quiver plot)
+    plt.grid()
+    plt.quiver([0],[0], *v, angles='xy', scale_units='xy', scale=1, color='green')
+    plt.xlim(-10, 10); plt.ylim(-10, 10)
+    plt.show()
     
     return vMag, vAtan
 
@@ -59,6 +61,8 @@ def vector_addition(v1, v2):
         Plots the vectors and their sum, then returns the latter.
     '''
 
+    print('-'*30 + '\nVector Addition\n' + '-'*30)
+
     import numpy as np # for building arrays
     import matplotlib.pyplot as plt # for plotting vectors
 
@@ -66,6 +70,9 @@ def vector_addition(v1, v2):
     v2 = np.array(v2) # second vector as array
     vSum = v1 + v2 # vector addition
     vectors = np.array([v1, v2, vSum])
+    print('Vector 1:', v1)
+    print('Vector 2:', v2)
+    print('Vector sum:', vSum)
 
     # plot vectors as arrows (quiver plot)
     plt.grid()
@@ -81,19 +88,35 @@ def vector_multiplication(x, y):
         Returns scalar, dot, or cross product as output.
     '''
 
+    print('-'*30 + '\nVector Multiplication\n' + '-'*30)
+
     import numpy as np
     
     if type(x) == list and type(y) == int:
-        return np.array(x) * y # scalar product
+        product = np.array(x) * y # scalar product
+        print('Vector:', np.array(x))
+        print('Multiplier:', y)
+        print('Scalar product:', product)
+        return product
     elif type(x) == int and type(y) == list:
-        return x * np.array(y) # scalar product
+        product = x * np.array(y) # scalar product
+        print('Multiplier:', y)
+        print('Vector:', np.array(y))
+        print('Scalar product:', product)
+        return product
     elif type(x) == list and type(y) == list:
         v1 = np.array(x)
         v2 = np.array(y)
-        if len(x) == 2: 
-            return v1 @ v2 # dot product; alternative: np.dot(v1,v2)
+        print('Vector 1:', v1)
+        print('Vector 2:', v2)
+        if len(x) == 2:
+            product = v1 @ v2 # dot product; alternative: np.dot(v1,v2)
+            print('Dot product:', product)
+            return product
         elif len(x) == 3:
-            return np.cross(v1,v2) # cross product
+            product = np.cross(v1,v2) # cross product
+            print('Cross product:', product)
+            return product
 
 '''
 PART 2: MATRICES
@@ -115,25 +138,27 @@ def matrix_operations(A, B, operation='add'):
         Returns result of operation.
     '''
 
+    print('-'*30 + '\nMatrix Operation\n' + '-'*30)
+
     import numpy as np
 
     A = np.matrix(A) # .matrix allows multiplication with * and inverse with .I
     B = np.matrix(B)
 
-    if operation == 'add': return A+B # sum of matrices
-    if operation == 'sub': return A-B # difference of matrices
-    if operation == 'neg': return -A,-B # negation of matrices
-    if operation == 'transpose': return A.T,B.T # transposition of matrices
+    if operation == 'add': return print(A+B) # sum of matrices
+    if operation == 'sub': return print(A-B) # difference of matrices
+    if operation == 'neg': return print(-A,-B) # negation of matrices
+    if operation == 'transpose': return print(A.T,B.T) # transposition of matrices
     if operation == 'mul': # matrix multiplication if allowed by shapes
         if np.shape(A)[0] == np.shape(B)[1] and np.shape(A)[1] == np.shape(B)[0]:
-            return A*B # dot product; alternatives: A@B; np.dot(A,B)
+            return print(A*B) # dot product; alternatives: A@B; np.dot(A,B)
         else:
-            return 'These matrices cannot be multiplied.'
+            return print('These matrices cannot be multiplied.')
     if operation == 'div': # matrix inverse multiplication if allowed by shapes
         if np.shape(A)[0] == np.shape(B)[0] and np.shape(A)[1] == np.shape(B)[1]:
-            return A*B.I # dot product; alternative: A@np.linalg.inv(B)
+            return print(A*B.I) # dot product; alternative: A@np.linalg.inv(B)
         else:
-            return 'These matrices cannot be divided.'
+            return print('These matrices cannot be divided.')
 
 def solve_system_of_equations(xy, results):
     '''
@@ -142,6 +167,8 @@ def solve_system_of_equations(xy, results):
         2x+4y and 6x+2y, and 'results' might be [[18,34]].
         Returns values for x and y that solve the equation system.
     '''
+
+    print('\n' + '-'*30 + '\nSolving System of Equations\n' + '-'*30)
 
     import numpy as np
 
@@ -168,13 +195,15 @@ def eigenvalues_eigenvectors(A):
         Returns eigenvalues and eigenvectors.
     '''
 
+    print('\n' + '-'*30 + '\nEigenvectors, Eigenvalues\n' + '-'*30)
+
     import numpy as np
 
     A = np.array(A) # turn list into array
     eVals, eVecs = np.linalg.eig(A) # get eigenvalues and eigenvectors
 
-    print('Eigenvectors and eigenvalues of Matrix:\n', A)
-    print('lambdas:', eVals[0], 'and', eVals[1])
-    print('vectors:', eVecs[:,0], 'and', eVecs[:,1])
+    print('Matrix:\n', A)
+    print('Lambdas:', eVals[0], 'and', eVals[1])
+    print('Vectors:', eVecs[:,0], 'and', eVecs[:,1])
 
     return eVals, eVecs
