@@ -18,10 +18,10 @@ ea.quadratic_function(2, 8, -16, (-20, 21), xInter=True, yInter=False, vertex=Tr
     data range for x: -20 to 20
     plot roots (xInter) and vertex, but not y intercept nor line of symmetry '''
 
-print(la.vector_properties(9, 9)) # plot and print magnitude and amplitude of a 2d vector
-print(la.vector_addition([9,7], [-1,-2])) # plot and print the sum of two 2d vectors
-print(la.vector_multiplication([2,3,1], [1,2,-2])) # multiply two 3d vectors
-print(la.matrix_operations([[1,2,3],[4,5,6]], [[6,5,4],[3,2,1]], 'div')) # inversely multiply two 3x3 matrices
+la.vector_properties(9, 9)# plot and print magnitude and amplitude of a 2d vector
+la.vector_addition([9,7], [-1,-2]) # plot and print the sum of two 2d vectors
+la.vector_multiplication([2,3,1], [1,2,-2]) # multiply two 3d vectors
+la.matrix_operations([[1,2,3],[4,5,6]], [[6,5,4],[3,2,1]], 'div') # inversely multiply two 3x3 matrices
 la.solve_system_of_equations([[4,2],[5,2]], [[14],[16]]) # 2x+4y=18; 6x+2y=34; find x and y
 la.eigenvalues_eigenvectors([[2,0],[0,3]]) # print eigenvalues and eigenvectors of a 2x2 matrix
 
