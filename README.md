@@ -8,6 +8,7 @@ This Python repository collects mathematical concepts that are essential for mac
   - a function for processing matrices with six operations (addition, subtraction, negation, transposition, multiplication, and division),
   - a function for solving systems of equations with matrices, and
   - a function for calculating eigenvector-eigenvalue pairs.
-- The modules **differential_calculus**, **integral_calculus**, and **statistics_fundamentals** are not written yet.
+- The module **integral_calculus** calculates an integral and plots its area under a function.
+- The modules **differential_calculus** and **statistics_fundamentals** are not written yet.
 
-Required third-party modules are *pandas* (for data frames), *numpy* (for vectors and matrices), and *matplotlib* (for graphs).
+Required third-party modules are *pandas* for data frames, *matplotlib* for graphs, *numpy* for vectors and matrices, and *scipy* for integration.
