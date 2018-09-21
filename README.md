@@ -8,7 +8,12 @@ This Python repository collects mathematical concepts that are essential for mac
   - a function for processing matrices with six operations (addition, subtraction, negation, transposition, multiplication, and division),
   - a function for solving systems of equations with matrices, and
   - a function for calculating eigenvector-eigenvalue pairs.
-- The module **differential_calculus** is not written yet.
+- The module **differential_calculus** relies heavily on print outputs and introduces key concepts of calculus including
+  - average rate of change, secant line, and slope,
+  - limits and discontinuity,
+  - derivatives, critical points, and partial derivatives.
 - The module **integral_calculus** calculates an integral and plots its area under a function.
 
 Required third-party modules are *pandas* for data frames, *matplotlib* for graphs, *numpy* for vectors and matrices, and *scipy* for integrals.
+
+The scripts in this repository will certainly appear messy, but I have written them solely for myself to refresh and refine my understanding of these concepts. I did not bother to structure them more consistently because there are already ample resources for learning algebra and calculus available online.
