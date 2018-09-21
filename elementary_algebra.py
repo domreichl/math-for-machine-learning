@@ -1,6 +1,6 @@
 '''
-linear_algebra.py by Dominic Reichl, @domreichl
-module for math_for_machine_learning.py that XXXXXXXXXXXX
+elementary_algebra.py by Dominic Reichl, @domreichl
+module for math_for_machine_learning.py that plots and prints linear and quadratic functions
 
 key concepts:
 - function: linear, quadratic
