@@ -11,4 +11,4 @@ This Python repository collects mathematical concepts that are essential for mac
 - The module **integral_calculus** calculates an integral and plots its area under a function.
 - The modules **differential_calculus** and **statistics_fundamentals** are not written yet.
 
-Required third-party modules are *pandas* for data frames, *matplotlib* for graphs, *numpy* for vectors and matrices, and *scipy* for integration.
+Required third-party modules are *pandas* for data frames, *matplotlib* for graphs, *numpy* for vectors and matrices, and *scipy* for integrals.
