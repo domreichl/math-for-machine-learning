@@ -11,7 +11,7 @@ This Python repository collects mathematical concepts that are essential for mac
 - The module **differential_calculus** relies heavily on print outputs and introduces key concepts of calculus including
   - average rate of change, secant line, and slope,
   - limits and discontinuity,
-  - derivatives, critical points, and partial derivatives.
+  - derivatives (first and second order), critical points, and partial derivatives.
 - The module **integral_calculus** calculates an integral and plots its area under a function.
 
 Required third-party modules are *pandas* for data frames, *matplotlib* for graphs, *numpy* for vectors and matrices, and *scipy* for integrals.
