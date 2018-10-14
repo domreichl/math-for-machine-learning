@@ -11,7 +11,7 @@ With derivatives, we can find the local minimum/maximum of a function.
 def average_rate_of_change():
     print('-'*30 + '\nAverage Rate of Change\n' + '-'*30)
     print('\nFunction f(x) = x²+x calculates the distance travelled for a given number of seconds.')
-    print('\nAs you can see in the green curve, since the function is quadratic, the increase is exponential, which means that the rate of change is not constant, but increasing (so the represented phenomenon is accelerating).')
+    print('\nAs you can see in the green curve, since the function is quadratic, the the rate of change is not constant, but increasing; the represented phenomenon is accelerating.')
     print('\nNote that acceleration measures change in velocity over time, and velocity measures change in distance over time.')
     print('\nThis complexity requires differential calculus.')
     print('\nBut first we need a SECANT LINE, which is a straight line (here in pink) between two points of a function (here x=2 and x=7).')
